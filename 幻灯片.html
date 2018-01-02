@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>作品</title>
+<link rel="stylesheet" href="css/jquery.easyfader.css">
+<style>
+        body {
+            background: #000000;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .toubu{
+            margin: 0 auto;
+            width: 1000px;
+            overflow: hidden;
+            margin-top: 60px;
+        }
+        .daohang{
+            margin: 0 auto;
+            width: 518px;
+            padding-left: 39px;
+        }
+        .daohang li{
+            float:left;
+            list-style: none;
+            margin-left: 70px;/**向左浮动70像素**/
+            color: #ffffff;
+        }
+        .daohang li a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .fader {
+            margin: 0 auto;
+            width: 1600px;/**幻灯片**/
+    </style>
+</head>
+<div id="dowebok" class="fader">
+    <img class="slide" src="images/11.jpg">
+    <img class="slide" src="images/22.jpg">
+    <img class="slide" src="images/33.jpg">
+    <img class="slide" src="images/44.jpg">
+    <img class="slide" src="images/55.jpg">
+    <img class="slide" src="images/66.jpg">
+    <div class="fader_controls">
+        <div class="page prev" data-target="prev">&lsaquo;</div>
+        <div class="page next" data-target="next">&rsaquo;</div>
+        <ul class="pager_list"></ul>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easyfader.min.js"></script>
+<script>
+$(function() {
+	$('#dowebok').easyFader();
+});
+</script>
